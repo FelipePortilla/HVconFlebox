@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 10px;
+    background-color: dimgrey;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Flexbox se utiliza en el contenedor principal de la hoja de vida */
+  .HV-style {
+    display: flex;
+    /* overflow: scroll; */
+  }
+  
+  /* Columna 1 de la hoja de vida */
+  #columna1 {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 100vh;
+    /* min-height: fit-content; */
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background-color: rgb(161, 206, 228);
+    justify-content: center;
+  }
+  
+  /* Grid Layout se utiliza para el posicionamiento de la foto de perfil */
+  .fotoperfil {
+    justify-items: center;
+    width: 100%;
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+  }
+  
+  #columna1 figure {
+    display: inline-grid;
+    box-sizing: border-box;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  /* Estilos para el enlace del logotipo de LinkedIn */
+  #columna1 a img {
+    width: 30px;
+    height: 30px;
+    color: blue;
+  }
+  
+  #columna1 p span {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  #columna1 p {
+    padding: 10px;
+    padding-top: 10px;
+    margin: 0px;
+  }
+  
+  /* Columna 2 de la hoja de vida */
+  #columna2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.3%;
+    height: 100vh;
+    /* min-height: fit-content; */
+    padding: 10px;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background-color: rgb(181, 227, 250);
+  }
+  
+  /* Grid Layout se utiliza para el posicionamiento de las barras de habilidades */
+  .progress {
+    position: relative;
+    width: 80%;
+    height: 6px;
+    background: rgb(145, 145, 145);
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .progress::before {
+    position: absolute;
+    content: '';
+    width: var(--wth);
+    height: 15px;
+    background: rgb(73, 107, 255);
+    border-radius: 6px;
+  }
+  
+  /* Columna 3 de la hoja de vida */
+  #columna3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.3%;
+    height: 100vh;
+    /* min-height: fit-content; */
+    padding: 10px;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(144, 204, 234);
+  }
+  
